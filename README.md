@@ -1,7 +1,7 @@
-#Storefront API
+# Storefront API
 The goal of this project is to create api for ecommerce website.
 
-###Project setup
+### Project setup
 
 1. Run `$ npm install` in your CMD to install all project dependencies.
 2. Run `$ psql -U postgres` in your CMD to start database creation proccess and then enter your postgres passoword.
