@@ -1,0 +1,58 @@
+{
+    "name": "storefront-api",
+    "version": "1.0.0",
+    "description": "This repo contains a basic Node and Express app to get you started in constructing an API. To get started, clone this repo and run `yarn` in your terminal at the project root.",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon src/index.ts",
+        "build": "tsc",
+        "start": "npm run build && node dist/index.js",
+        "format": "prettier --write src/**/*.ts",
+        "lint": "eslint src/**/*.ts",
+        "lint:fix": "eslint src/**/*.ts --fix",
+        "test": "tsc && SET NODE_ENV=test&& db-migrate --env test up && jasmine && db-migrate --env test reset",
+        "migrate": "db-migrate up"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/abdelmonem88/Storefront-API.git"
+    },
+    "author": "abdelmonem",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/abdelmonem88/Storefront-API/issues"
+    },
+    "homepage": "https://github.com/abdelmonem88/Storefront-API#readme",
+    "devDependencies": {
+        "@types/bcrypt": "^5.0.0",
+        "@types/cors": "^2.8.12",
+        "@types/dotenv": "^8.2.0",
+        "@types/express": "^4.17.13",
+        "@types/jasmine": "^4.0.3",
+        "@types/jsonwebtoken": "^8.5.8",
+        "@types/pg": "^8.6.5",
+        "@types/supertest": "^2.0.12",
+        "@typescript-eslint/eslint-plugin": "^5.30.6",
+        "@typescript-eslint/parser": "^5.30.6",
+        "eslint": "^8.19.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "jasmine": "^4.2.1",
+        "jasmine-spec-reporter": "^7.0.0",
+        "nodemon": "^2.0.19",
+        "prettier": "^2.7.1",
+        "supertest": "^6.2.4",
+        "ts-node": "^10.8.2",
+        "typescript": "^4.7.4"
+    },
+    "dependencies": {
+        "bcrypt": "^5.0.1",
+        "cors": "^2.8.5",
+        "db-migrate": "^0.11.13",
+        "db-migrate-pg": "^1.2.2",
+        "dotenv": "^16.0.1",
+        "express": "^4.18.1",
+        "jsonwebtoken": "^8.5.1",
+        "pg": "^8.7.3"
+    }
+}
